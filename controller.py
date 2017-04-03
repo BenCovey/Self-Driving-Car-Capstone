@@ -78,7 +78,7 @@ def turn_left():
     
 atexit.register(turn_off_motors())
 
-
+""" uncomment below to add controller support
 stdscr = curses.initscr()
 curses.cbreak()
 stdscr.keypad(1)
@@ -144,4 +144,4 @@ while key != ord('q'):
     else:
         turn_off_motors()
         stdscr.addstr("Current mode: STOPPING          ",curses.A_REVERSE)
-curses.endwin()
+curses.endwin()"""

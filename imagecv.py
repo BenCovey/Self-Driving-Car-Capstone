@@ -2,6 +2,7 @@ import cv2
 import time
 import numpy
 import sys
+from . import controller
 # Camera 0 is the integrated web cam on my netbook
 camera_port = 0
 
@@ -13,11 +14,11 @@ ramp_frames = 30
 camera = cv2.VideoCapture(camera_port)
 
 # constants
-BLACK_THRESHOLD = 20
-POINT_THRESHOLD = 50
+BLACK_THRESHOLD = 20 # red, blue, and green value less than this
+POINT_THRESHOLD = 50 # percentage of any given point that is black
 
 
-def go_straight():
+'''def go_straight():
     print("CONTINUE ON")
 
 
@@ -26,7 +27,7 @@ def turn_left():
 
 
 def turn_right():
-    print("TURN RIGHT")
+    print("TURN RIGHT")'''
 
 
 def do_the_gray_thing(im):
