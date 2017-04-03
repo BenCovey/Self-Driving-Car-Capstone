@@ -66,9 +66,9 @@ while(True):
     #im.save("/home/pi/Desktop/filteredimg.jpeg")
     from PIL import Image
     img =Image.fromarray(im)
-    img.save("/home/pi/Desktop/filteredimg.jpeg")
-    cv2.imshow('image color removal', im)
+    #img.save("filteredimg.jpeg")
+    #cv2.imshow('image color removal', im)
     
-    #time.sleep(5)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    time.sleep(5)
+    #cv2.waitKey(0)
+    #cv2.destroyAllWindows()
