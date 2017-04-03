@@ -1,9 +1,13 @@
 __author__ = 'Ben Covey, Brandon Christen, Alex Cochrane'
-#from Pillow import Image
+from PIL import Image
 import matplotlib.pyplot as plt
 from numpy import array
 from skimage import data
-"""img = Image.open("input.png")
+from SimpleCV import Image, Camera
+
+cam = Camera()
+img = cam.getImage()
+
 rgb_im = img.convert('RGB')
 pixel_array = []
 # if(r == 181 or g == 230 or b == 29):
@@ -25,4 +29,4 @@ try:
 finally:
     print(len(pixel_array))
     print(pixel_array)
-    print("End of range")"""
+    print("End of range")
